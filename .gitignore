@@ -33,6 +33,12 @@ _delta_log/
 data/
 /mnt/
 
+# ── Large dataset binaries (too big for plain git) ───────────────────────────
+datasets/*.parquet
+datasets/*.orc
+datasets/emp_new.csv
+datasets/order_multiline.json
+
 # ── macOS ────────────────────────────────────────────────────────────────────
 .DS_Store
 __MACOSX/
@@ -46,6 +52,9 @@ __MACOSX/
 *.iml
 *.iws
 *.ipr
+
+# ── Claude Code ──────────────────────────────────────────────────────────────
+.claude/
 
 # ── Environment / secrets ────────────────────────────────────────────────────
 .env
